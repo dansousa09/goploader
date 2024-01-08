@@ -4,6 +4,7 @@ import { Outlet, useNavigate } from "react-router-dom";
 import { HelpCircle, Phone } from "lucide-react";
 import { Button } from "../../ui/button";
 import { Input } from "../../ui/input";
+import { CustomTooltip } from "../../ui/custom/custom-tooltip";
 
 export default function DashboardLayout() {
 	const { userId, isLoaded } = useAuth();
@@ -27,15 +28,19 @@ export default function DashboardLayout() {
 					ploader
 				</h1>
 				<div className="w-1/3">
-					<Input placeholder="Pesquisar..." />
+					<Input placeholder="Search..." />
 				</div>
 				<div className="flex items-center space-x-4">
-					<Button variant="ghost" size="icon" className="w-8 h-8 p-1.5">
-						<Phone className="text-sm" />
-					</Button>
-					<Button variant="ghost" size="icon" className="w-8 h-8 p-1.5">
-						<HelpCircle className="text-sm" />
-					</Button>
+					<CustomTooltip text="Contact">
+						<Button variant="ghost" size="icon" className="w-8 h-8 p-1.5">
+							<Phone className="text-sm" />
+						</Button>
+					</CustomTooltip>
+					<CustomTooltip text="Help">
+						<Button variant="ghost" size="icon" className="w-8 h-8 p-1.5">
+							<HelpCircle className="text-sm" />
+						</Button>
+					</CustomTooltip>
 					<UserButton />
 				</div>
 			</header>
