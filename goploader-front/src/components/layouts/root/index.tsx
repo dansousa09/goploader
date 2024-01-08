@@ -11,8 +11,6 @@ export default function RootLayout() {
 	return (
 		<ClerkProvider
 			publishableKey={PUBLISHABLE_KEY}
-			afterSignInUrl="/dashboard"
-			afterSignUpUrl="/dashboard"
 		>
 			<main>
 				<Outlet />

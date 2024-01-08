@@ -4,7 +4,7 @@ import { AuthLayout } from "../../components/layout";
 export default function SignUpPage() {
 	return (
 		<AuthLayout>
-			<SignUp path="/sign-up" routing="path" signInUrl="/sign-in" />
+			<SignUp afterSignUpUrl="/dashboard" signInUrl="/sign-in" />
 		</AuthLayout>
 	);
 }
