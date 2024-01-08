@@ -9,7 +9,11 @@ if (!PUBLISHABLE_KEY) {
 
 export default function RootLayout() {
 	return (
-		<ClerkProvider publishableKey={PUBLISHABLE_KEY}>
+		<ClerkProvider
+			publishableKey={PUBLISHABLE_KEY}
+			afterSignInUrl="/dashboard"
+			afterSignUpUrl="/dashboard"
+		>
 			<main>
 				<Outlet />
 			</main>
