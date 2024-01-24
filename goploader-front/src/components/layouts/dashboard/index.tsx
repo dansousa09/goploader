@@ -22,7 +22,7 @@ export default function DashboardLayout() {
 		<div className="w-screen h-screen">
 			<header className="w-full h-20 p-6 flex items-center justify-between border-b border-zinc-200">
 				<h1 className="font-bold text-xl text-zinc-800">
-					<span className="underline decoration-indigo-500 mr-2 border-2 border-zinc-800 rounded-xl p-2">
+					<span className="underline decoration-indigo-500 mr-2 border-2 border-zinc-800 rounded-xl px-2 py-1">
 						Go
 					</span>
 					ploader
